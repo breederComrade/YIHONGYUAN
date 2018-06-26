@@ -1,0 +1,18 @@
+.DS_Store
+node_modules/
+dist/
+degbug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/App.vue.rej
+src/components/common/header.vue.rej
+src/components/common/orderListHeader_auto.vue.rej
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen

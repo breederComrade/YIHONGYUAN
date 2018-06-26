@@ -1,0 +1,30 @@
+{
+  "name": "yihongyuan",
+  "version": "1.0.0",
+  "description": "node api",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breederComrade/YIHONGYUAN.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "koa2",
+    "mongoDB"
+  ],
+  "author": "wangjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breederComrade/YIHONGYUAN/issues"
+  },
+  "homepage": "https://github.com/breederComrade/YIHONGYUAN#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
