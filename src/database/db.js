@@ -2,12 +2,10 @@
  *  数据库处理文件 
  */
 
-var mongoose = require('mongoose');
-
-var url = 'mongodb://localhost:27017/yhy';
-
+const mongoose = require('mongoose'),
+config = require('../config/index');
 // 链接数据库
-mongoose.connect(url)
+mongoose.connect(config.db)
 var db = mongoose.connection;
 // 监控数据库
 db.on('open',function() {

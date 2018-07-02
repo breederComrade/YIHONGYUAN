@@ -72,7 +72,7 @@ module.exports = product;
 运行脚本
 > npm start
 
-**NOTE:** 数据库配置为默认配置，可通过修改db/config文件来修改成你自己的配置项目
+**NOTE:** 数据库配置为默认配置，可通过修改./src/config/config文件来修改成你自己的配置项目
 
 
 ## License
