@@ -20,7 +20,7 @@ const express = require('express'),
 
 // 解析请求主体
 app.use(bodyParser());
-app.use(cookieParser());
+app.use(cookieParser('qqqqqqqwwqwqwqwqwqwqf9293923dsaf',{}));
 
 // 注意： 如果要这么操作 需要先usebody 否则在routes调用时body还没有传入routes
 routes(app)
