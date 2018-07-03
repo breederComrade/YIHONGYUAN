@@ -13,6 +13,7 @@ const express = require('express'),
   router = express.Router(),
   bodyParser = require('body-parser'),
   cookieParser = require('cookie-parser'),
+  session = require('express-session'),
   path = require('path'),
  
   db = require('./src/database/db');
@@ -21,6 +22,7 @@ const express = require('express'),
 // 解析请求主体
 app.use(bodyParser());
 app.use(cookieParser('qqqqqqqwwqwqwqwqwqwqf9293923dsaf',{}));
+app.use(session({name:"jsessionId",secret:"recommand 128 bytes random string",cookie: { maxAge: 60 * 1000 }}))
 
 // 注意： 如果要这么操作 需要先usebody 否则在routes调用时body还没有传入routes
 routes(app)

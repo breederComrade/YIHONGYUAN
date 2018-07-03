@@ -8,39 +8,16 @@ const user = require("../../database/user");
 
 //  接收用户验证的数据
 module.exports = function (req,res) {
-	// 验证已经登录的用户是否有效
-
-    //  cookie 验证
-
-	// session-cookie验证
-
-
-
-	
-	//  token验证
-	//  Passpost 确保验证
-
-	// 数据库中查找师傅存在该账号密码
-      user.find({
-		  'name':'fuck'
-	  },{_id:0},(err,data)=>{
-		  if(err) {
-			  console.log('====================================');
-			  console.log(err);
-			  console.log('====================================');
-			};
-          if(data.length){
-			 res.send({
-				 message:"登入成功",
-				 status:200,
-				 data:data[0].name
-			 })
-		  }
-
-	  })
-
-
-
-
+   console.log('====================================');
+   console.log('ssss',req.session);
+   console.log('====================================');
+	// sesssion 验证
+	if(req.session.isVisit) {
+		req.session.isVisit++;
+		res.send('<p>第 ' + req.session.isVisit + '次来此页面</p>');
+	  } else {
+		req.session.isVisit = 1;
+		res.send("欢迎第一次来这里");    console.log(req.session);
+	  }
 
 } 
