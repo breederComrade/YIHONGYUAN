@@ -8,9 +8,6 @@ const user = require("../../database/user");
 
 //  接收用户验证的数据
 module.exports = function (req,res) {
-   console.log('====================================');
-   console.log('ssss',req.session);
-   console.log('====================================');
 	// sesssion 验证
 	if(req.session.isVisit) {
 		req.session.isVisit++;
