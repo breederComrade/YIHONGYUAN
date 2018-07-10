@@ -2,10 +2,6 @@
  * 用户验证
  *  
  */
-
-// 用户数据库表
-
-
 const user = require("../../database/user");
 
 //  接收用户验证的数据

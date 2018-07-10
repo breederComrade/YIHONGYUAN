@@ -8,15 +8,6 @@ const user = require("../../database/user");
 
 //  接收用户验证的数据
 module.exports = function (req,res) {
-	// 验证已经登录的用户是否有效
-
-    //  cookie 验证
-
-	// session-cookie验证
-
-
-
-	
 	//  token验证
 	//  Passpost 确保验证
 
